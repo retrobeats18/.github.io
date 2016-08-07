@@ -3,25 +3,32 @@ body {
 	color: #747784;
 	background-color: white;
 }
+
 .text-muted {
 	color:	#BCBBBB;
 }
+
 .text-thin {
 	font-weight: 100;
 }
+
 .title-super{
 	font-size: 48px;
 	margin-top: 15px;
 }
+
 .title-logo {
 	margin-top: 20px;
 }
+
 .title-nav {
 	margin-top: 20px;
 }
+
 img, embed, object, video {
 	max-width: 100%;
 }
+
 nav, a, button {
 	min-width: 48px;
 	min-height: 48px;
