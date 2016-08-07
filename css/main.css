@@ -32,4 +32,10 @@ img, embed, object, video {
 nav, a, button {
 	min-width: 48px;
 	min-height: 48px;
+	color: #747784;
+    	text-decoration: none;
+}
+
+a:hover {
+	text-decoration:none;
 }
