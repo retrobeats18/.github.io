@@ -8,7 +8,7 @@
 	<link rel="stylesheet" href="css/bootstrap.css">
 	<link href='https://fonts.googleapis.com/css?family=Poiret+One' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/main.css">
-	
+
 	<script src="js/jquery-1.11.3.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
 </head>
@@ -17,9 +17,9 @@
 		<!-- Heading section -->
 		<header>
 			<div class="row">
+				<!-- TODO: make JCS into logo - <img  class="img-responsive title-logo" src="" alt="Logo image"> -->
 				<div class="col-xs-6 col-md-6 ">
-					<a href="https://retrobeats18.github.io/"><h3 class="title-logo">JCS</h3></a>
-				 <!-- TODO: <img  class="img-responsive title-logo" src="" alt="Logo image"> -->
+					<h3 class="title-logo">JCS </h3>
 				</div>
 				<!-- TODO: add NAV dropdown menu functionality -->
 				<div class="col-xs-6 col-md-6 text-right">
@@ -36,13 +36,13 @@
 				<hr>
 				<div class="row text-center">
 					<div class="col-md-4">
-						
+
 					</div>
 					<div class="col-md-4">
 						<h4>L i f e  I s  R a d </h4>
 					</div>
 					<div class="col-md-4">
-						
+
 					</div>
 				</div>
 				<hr>
@@ -51,9 +51,18 @@
 		<!-- Front page main image-->
 		<section>
 			<div class="row">
-				<img class="img-responsive main-img" src="img/fingerprint1.jpg" alt="Main page finger print image">
+				<figure>
+					<img class="img-responsive main-img" src="img/fingerprint1.jpg" alt="Main page finger print image">
+				</figure>
 			</div>
 		</section>
+		<hr>
+		<div class="row">
+			<h3 class="text-muted">About</h3>
+			<p>
+
+			</p>
+		</div>
 		<hr>
 		<!-- Featured Work section -->
 		<section>
@@ -61,16 +70,14 @@
 				<h3 class="text-muted">Featured Work</h3>
 			</div>
 			<div class="row text-uppercase text-center">
+				<!-- TODO: add future project -->
+				<div class="col-md-4">
+					<img class="img-responsive" src="img/resumeproject.png" alt="Interactive Resume Project Image" data-toggle="modal" data-target="#resumeCode">
+					<h3><a href="frontend-nanodegree-resume-master/index_resume.html">Interactive Resume</a></h3>
+				</div>
 				<div class="col-md-4">
 					<img class="img-responsive" src="img/framework.png" alt="Framework project image" data-toggle="modal" data-target="#frameCode"/>
 					<h3>Framework Code</h3>
-
-
-				</div>
-				<!-- TODO: add future project -->
-				<div class="col-md-4"> 
-					<img class="img-responsive" src="http://placehold.it/300x250" alt="Responsive Image">
-					<h3>TBA App</h3>
 				</div>
 				<!-- TODO: add future project -->
 				<div class="col-md-4">
@@ -78,7 +85,7 @@
 					<h3>TBA App</h3>
 				</div>
 			</div>
-		</section>	
+		</section>
 		<!-- Personal Photography section -->
 		<section>
 			<div class="row">
@@ -86,25 +93,43 @@
 			</div>
 			<div class="row text-uppercase text-center">
 				<div class="col-md-4">
-					<img class="img-responsive" src="img/sandyfeet.jpg" alt="Sandy Feet on the beach image" data-toggle="modal" data-target="#sandyFeet"/>
+					<img class="img-responsive" src="img/sandyfeet.jpg" alt="Responsive Image" data-toggle="modal" data-target="#sandyFeet"/>
 					<h3>sandy feet</h3>
 
 				</div>
 				<div class="col-md-4">
-					<img class="img-responsive" src="img/deadshark.jpg" alt="Dead shark in California tide pools image" data-toggle="modal" data-target="#deadShark">
+					<img class="img-responsive" src="img/deadshark.jpg" alt="Responsive Image" data-toggle="modal" data-target="#deadShark">
 					<h3>dead shark</h3>
 
 				</div>
 				<div class="col-md-4">
-					<img class="img-responsive" src="img/squid.jpg" alt="squid on a rock image" data-toggle="modal" data-target="#squid">
+					<img class="img-responsive" src="img/squid.jpg" alt="Responsive Image" data-toggle="modal" data-target="#squid">
 					<h3>squid</h3>
 				</div>
 				<!-- TODO: add more photos, add light box functionality or link to gallery -->
-			</div> 
+			</div>
 		</section>
 	</div>
 
 	<!-- Modals -->
+<!-- resume modal -->
+<div class="modal fade" id="resumeCode" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title" id="myModalLabel">Interactive Resume Code</h4>
+      </div>
+      <div class="modal-body">
+        <img class="img-responsive" src="img/resumeproject.png" alt="Interactive Resume Project image">
+        Developed an interactive resume, dynamically populated with JavaScript.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+	<!-- framework modal -->
 <div class="modal fade" id="frameCode" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -113,7 +138,7 @@
       </div>
       <div class="modal-body">
         <img class="img-responsive" src="img/framework.png" alt="Framework project image">
-        <p>During the Intro to HTML and CSS course I learned how to build a CSS Framework. I also learned pros and cons between using your own framework or using more popular frames such as Bootstrap.</p>
+        This was my first project in this class. I learned a lot about HTML and CSS.
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -121,6 +146,7 @@
     </div>
   </div>
 </div>
+
 </body>
 </html>
 

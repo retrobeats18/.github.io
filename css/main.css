@@ -3,39 +3,34 @@ body {
 	color: #747784;
 	background-color: white;
 }
-
 .text-muted {
 	color:	#BCBBBB;
 }
-
 .text-thin {
 	font-weight: 100;
 }
-
 .title-super{
 	font-size: 48px;
 	margin-top: 15px;
 }
-
 .title-logo {
 	margin-top: 20px;
 }
-
 .title-nav {
 	margin-top: 20px;
 }
-
+.section-description {
+	display: inline-block;
+}
 img, embed, object, video {
 	max-width: 100%;
+	margin: auto;
 }
-
 nav, a, button {
 	min-width: 48px;
 	min-height: 48px;
 	color: #747784;
-    	text-decoration: none;
 }
-
 a:hover {
-	text-decoration:none;
+	text-decoration: none;
 }
